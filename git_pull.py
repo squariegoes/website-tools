@@ -2,7 +2,7 @@ import git
 
 
 DIRS = [
-    ''
+    '/home/jstewart1/sample'
 ]
 
 
@@ -13,7 +13,8 @@ def main():
 
 def pull(git_dir):
     g = git.cmd.Git(git_dir)
-    g.pull
+    g.pull()
+    print 'Git pulled {}'.format(git_dir)
 
 
 if __name__ == "__main__":
